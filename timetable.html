@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timetable</title>
+    <link rel="stylesheet" type="text/css" href="timetable.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+     <!-- HEADER -->
+  <div class="hero">
+    <header>
+      <nav>
+        <a href="index.html"> <img src="images/logo.png" class="logo"> </a>
+        <ul>
+            <li><a href="biography.html">BIOGRAPHY</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="timetable.html">TIME TABLE</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="download.html">DOWNLOAD</a></li>
+            <li><a href="link.html">LINK</a></li>
+            <li><a href="login.html">LOG IN</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
+        </nav>
+        </ul>
+    </nav>
+    </header>
+    <h1>Timetable</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th colspan="2">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('CSC510')">CSC510</a></td>
+          <td>Wed, 12:00pm - 2:00pm</td>
+          <td>Fri, 8:00am - 10:00am</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('CSC574')">CSC574</a></td>
+          <td>Tue, 4.00pm - 6:00pm</td>
+          <td>Wed, 8.00am - 10:00am</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('ELC550')">ELC550</a></td>
+          <td>Mon, 10.00am - 12:00pm</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('ITT569')">ITT569</a></td>
+          <td>Mon, 8.00am - 10:00am</td>
+          <td>Thu, 8:00am - 10:00am</td>
+        </tr>
+        
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('ITS462')">ITS462</a></td>
+          <td>Mon, 4.00pm - 6:00pm</td>
+          <td>Tue, 8:00am - 10:00am</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('ITT557')">ITT557</a></td>
+          <td>Thu, 2.00pm - 4:00pm</td>
+          <td>Fri, 10:00am - 12:00pm</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('ITT588')">ITT588</a></td>
+          <td>Tue, 10.00am - 12:00pm</td>
+          <td>Wed, 2:00pm - 4:00pm</td>
+        </tr>
+        <tr>
+          <td><a href="javascript:void(0);" onclick="openPopup('TMC401')">TMC401</a></td>
+          <td>Tue, 2.00pm - 4:00pm</td>
+        </tr>
+    
+      </tbody>
+    </table>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2 id="popup-title"></h2>
+        <p id="popup-description"></p>
+        <button class="close-button" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- FOOTER -->
+  <footer>
+    <div class="footer">
+        <div class="row">
+            <a href="https://twitter.com/unknownuser0307?t=PfT1E2a5GvheqVbQ3aVfjw&s=09"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCw3YqDbTlUx8SxO0suTEDng"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/zulfakhri-yusri-114524223/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contact us</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+        Copyright © 2023- All rights reserved 
+        </div>
+        </div>
+</footer>
+  </body>
+</html>

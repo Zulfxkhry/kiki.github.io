@@ -1,0 +1,114 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E1E8ED;
+  }
+  
+  /* Introduction section styles */
+  #intro {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 0;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .photo, .music, .video {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photo::before, .music::before, .video::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  
+  .photo img, .music img, .video img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  /* Button container styles */
+  #button-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Gallery styles */
+  #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .gallery-item {
+    margin: 10px;
+  }
+  
+  /* Music button styles */
+  #music-button {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #music-button:hover {
+    background-color: #0E81C7;
+  }
+  
+  /* Photos button styles */
+  #photos-button {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #photos-button:hover {
+    background-color: #0E81C7;
+  }
+  
+  /* Video button styles */
+  #video-button {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  #video-button:hover {
+    background-color: #0E81C7;
+  }
+  
